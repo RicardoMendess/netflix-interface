@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Netflix</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="./slick.css" />
+    <script type="text/javascript" src="./slick.min.js"></script>
+</head>
+
+<style>
+    .slider div {
+        margin: 0 2px;
+    }
+
+    .slider img {
+        width: 100%;
+    }
+
+    .slick-next {
+        right: 25px;
+    }
+
+    .slick-prev {
+        left: 25px;
+        z-index: 1;
+    }
+
+
+</style>
+
+<body>
+    <section>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="menu-organizar">
+                        <div class="col">
+                            <img src="./cards/netflix.png" alt="">
+                        </div>
+                        <div class="col">
+                            <p id="menu_topo">Início</p>
+                        </div>
+                        <div class="col">
+                            <p id="menu_topo">Filmes</p>
+                        </div>
+                        <div class="col">
+                            <p id="menu_topo">Seriados</p>
+                        </div>
+                        <div class="col">
+                            <p id="menu_topo">Buscar</p>
+                        </div>
+                        <div class="col">
+                            <p id="menu_topo">Contato</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section>
+        <div class="background-topo">
+            <img src="./cards/terror.jpg" alt="Imagem de Terror" id="Terror_div">
+        </div>
+    </section>
+    <div>
+        <h1 id="filmes-titulo">Filmes e Seriados</h1>
+    </div>
+    <div style="max-width: 2000px; margin: 0 auto">
+        <div class="slider">
+        </div>
+    </div>
+    <div>
+        <h1 id="filmes-titulo">Filmes e Seriados</h1>
+    </div>
+    <div style="max-width: 2000px; margin: 0 auto">
+        <div class="slider">
+        </div>
+    </div>
+    <div>
+        <h1 id="filmes-titulo">Filmes e Seriados</h1>
+    </div>
+    <div style="max-width: 2000px; margin: 0 auto">
+        <div class="slider">
+        </div>
+    </div>
+    <section>
+        <footer>
+            <div class="container">
+                <div class="col">
+                    <div class="div-menu">
+                        <ul class="menu-rodape">
+                            <li id="elemento-menu-rodape"><a href=""></a> Atendimento</li>
+                            <li id="elemento-menu-rodape"><a href=""></a> Contato</li>
+                            <li id="elemento-menu-rodape"><a href=""></a> Redes Sociais</li>
+                            <li id="elemento-menu-rodape"><a href=""></a> Fale conosco</li>
+                        </ul>
+                        <div class="name-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25412.831404701927!2d-121.96904467485737!3d37.23337632958893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e34365377033f%3A0xef675301ac748ca6!2sLos%20Gatos%2C%20CA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1635042080656!5m2!1spt-BR!2sbr" width=400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </footer>
+    </section>
+</body>
+
+<script>
+
+    var content = '';
+
+    for(var i = 1; i <= 20; i++) {
+      content += `<div><img src="./cards/${i}.jpg" alt="" /></div>`;
+    }
+
+    $('.slider').html(content);
+
+
+    $('.slider').slick({
+        centerPadding: '60px',
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerPadding: '20px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerPadding: '20px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+</script>
+
+</html>
