@@ -118,7 +118,18 @@
 {
     margin-bottom: 30px;
 }
-
+.slick-dotted.slick-slider-two {
+    margin-bottom: 30px;
+}
+.slick-dotted.slick-slider-three {
+    margin-bottom: 30px;
+}
+.slick-dotted.slick-slider-four {
+    margin-bottom: 30px;
+}
+.slick-dotted.slick-slider-five {
+    margin-bottom: 30px;
+}
 .slick-dots
 {
     position: absolute;

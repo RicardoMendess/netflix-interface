@@ -18,6 +18,74 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+.slick-slider-two {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-slider-three {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-slider-four {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-slider-five {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
 .slick-list
 {
     position: relative;
@@ -47,6 +115,44 @@
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
 }
+
+.slick-slider-two .slick-track,
+.slick-slider-two .slick-list 
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-slider-three .slick-track,
+.slick-slider-three .slick-list 
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-slider-four .slick-track,
+.slick-slider-four .slick-list 
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-slider-five .slick-track,
+.slick-slider-five .slick-list 
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
 
 .slick-track
 {
@@ -98,14 +204,17 @@
 {
     pointer-events: none;
 }
+
 .slick-initialized .slick-slide
 {
     display: block;
 }
+
 .slick-loading .slick-slide
 {
     visibility: hidden;
 }
+
 .slick-vertical .slick-slide
 {
     display: block;
@@ -114,6 +223,7 @@
 
     border: 1px solid transparent;
 }
+
 .slick-arrow.slick-hidden {
     display: none;
 }
@@ -136,16 +246,34 @@ body {
 }
 #filmes-titulo {
     color: #fff;
-}
-.div-menu {
-    display: inline-flex;
-    margin-top: 5em;
-    margin-left: 35em;
+    margin-left: 1em;
 }
 #elemento-menu-rodape {
-    padding: 10px 0;
     text-decoration: none;
     list-style: none;
     color: #fff;
-    padding: 0 2em;
+    margin-top: 1em;
+}
+.menu-rodape {
+    display: grid;
+    padding-top: 5em;
+    padding-left: 15em;
+}
+.container img {
+    padding: 0 10px;
+}
+.container-footer {
+    display: inline-flex;
+    margin-left: 32em;
+    margin-top: 5em;
+}
+.lista {
+    list-style: none;
+}
+#lista-filha a {
+    text-decoration: none;
+    color: #fff;
+}
+.col-coluna {
+    margin-left: 45em;
 }
